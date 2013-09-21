@@ -102,7 +102,7 @@
         subtitleRect.origin.y = 24;
         subtitleRect.size.height = rect.size.height - 24;
         [self.navigationBarSubtitleFontColor setFill];
-        [self.navigationBarSubtitle drawInRect:subtitleRect withFont:[UIFont boldSystemFontOfSize:13] lineBreakMode:NSLineBreakByTruncatingTail alignment:NSTextAlignmentCenter];
+        [self.navigationBarSubtitle drawInRect:subtitleRect withFont:[[UIFont preferredFontForTextStyle:@"Caption1"] fontWithSize:12] lineBreakMode:NSLineBreakByTruncatingTail alignment:NSTextAlignmentCenter];
     } else {
         CGRect titleRect = rect;
         titleRect.origin.y = (rect.size.height - 24.f) /2.f;
